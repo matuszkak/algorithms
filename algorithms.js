@@ -19,9 +19,14 @@ for (let i = 0; i <= 2; i++) {
 
 console.log('-------------');
 
-const x = [' ', 4, true];
-const a = [];
-for (let i = 0; i <= 2; i++) {
-  a.push(typeof (x[i]));
+
+function types(p) {
+  const a = [];
+  for (let i = 0; i < 3; i++) {
+    a.push(typeof (p[i]));
+  }
+  return a;
 }
-console.log(a);
+
+const x = [' ', 4, true];
+console.log(types(x));
